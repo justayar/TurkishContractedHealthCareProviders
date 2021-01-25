@@ -28,28 +28,28 @@ public class AxaInsuranceHealthCareProviderService {
         List<HealthCareProvider> healthCareProviders = new ArrayList<>();
 
         if(selectedQueries.contains("hospital")) {
-            logger.info("ÖSS Hastane anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Hastane anlaşmalı kurumlar çekiliyor");
             healthCareProviders = getProviders(HOSPITAL_ORGANIZATION_TYPE, OSS_POLICY_TYPE);
         }
 
 
         if(selectedQueries.contains("medicalCenter")) {
-            logger.info("ÖSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
             healthCareProviders.addAll(getProviders(MEDICALCENTER_ORGANIZATION_TYPE, OSS_POLICY_TYPE));
         }
 
         if(selectedQueries.contains("pyhsioCenter")) {
-            logger.info("ÖSS Fizik Tedavi merkezi anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Fizik Tedavi merkezi anlaşmalı kurumlar çekiliyor");
             healthCareProviders.addAll(getProviders(PHYSIOTHERAPHY_TYPE, OSS_POLICY_TYPE));
         }
 
         if(selectedQueries.contains("medicine")){
-            logger.info("ÖSS Eczaneler çekiliyor");
+            System.out.println("ÖSS Eczaneler çekiliyor");
             healthCareProviders.addAll(getProviders(MEDICINE_TYPE, OSS_POLICY_TYPE));
         }
 
         if(selectedQueries.contains("doctors")){
-            logger.info("ÖSS Doktorlar çekiliyor");
+            System.out.println("ÖSS Doktorlar çekiliyor");
             healthCareProviders.addAll(getProviders(DOCTOR_TYPE, OSS_POLICY_TYPE));
         }
 
@@ -60,17 +60,17 @@ public class AxaInsuranceHealthCareProviderService {
         List<HealthCareProvider> healthCareProviders = new ArrayList<>();
 
         if(selectedQueries.contains("hospital")) {
-            logger.info("TSS Hastane anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Hastane anlaşmalı kurumlar çekiliyor");
             healthCareProviders = getProviders(HOSPITAL_ORGANIZATION_TYPE, TSS_POLICY_TYPE);
         }
 
         if(selectedQueries.contains("medicalCenter")) {
-            logger.info("TSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
             healthCareProviders.addAll(getProviders(MEDICALCENTER_ORGANIZATION_TYPE, TSS_POLICY_TYPE));
         }
 
         if(selectedQueries.contains("pyhsioCenter")) {
-            logger.info("TSS Fizik Tedavi merkezi anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Fizik Tedavi merkezi anlaşmalı kurumlar çekiliyor");
             healthCareProviders.addAll(getProviders(PHYSIOTHERAPHY_TYPE, TSS_POLICY_TYPE));
         }
 

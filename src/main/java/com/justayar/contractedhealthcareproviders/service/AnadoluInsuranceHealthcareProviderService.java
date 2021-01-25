@@ -45,7 +45,7 @@ public class AnadoluInsuranceHealthcareProviderService {
         }
 
         organizationTypes.forEach((organizationTypeName,organizationKey) -> {
-            logger.info("ÖSS "+ organizationTypeName+" anlaşmalı kurumları çekiliyor");
+            System.out.println("ÖSS "+ organizationTypeName+" anlaşmalı kurumları çekiliyor");
             organizationProviders.addAll(getProviders(organizationTypeName,organizationKey,OSS_NETWORK_CODE,CONTRACTED_HOSPITAL_QUERY_TYPE));
         });
 
@@ -71,7 +71,7 @@ public class AnadoluInsuranceHealthcareProviderService {
 
 
         organizationTypes.forEach((organizationTypeName,organizationKey) -> {
-            logger.info("TSS "+ organizationTypeName+" Bireysel A Network anlaşmalı kurumları çekiliyor");
+            System.out.println("TSS "+ organizationTypeName+" Bireysel A Network anlaşmalı kurumları çekiliyor");
             organizationProviders.addAll(getProviders(organizationTypeName,organizationKey,TSS_INDIVIDUAL_A_NETWORK_CODE,CONTRACTED_HOSPITAL_QUERY_TYPE));
 
         });

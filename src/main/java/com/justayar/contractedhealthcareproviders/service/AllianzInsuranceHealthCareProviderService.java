@@ -32,33 +32,33 @@ public class AllianzInsuranceHealthCareProviderService {
         List<AllianzHealthCareProvider> allianzHealthCareProviders = new ArrayList<>();
 
         if(selectedQueries.contains("hospital")) {
-            logger.info("ÖSS Hastane anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Hastane anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(OSS_WHITE_NETWORK_HOSPITAL_STRING, "Hastane"));
         }
 
         if(selectedQueries.contains("medicalCenter")) {
-            logger.info("ÖSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(OSS_WHITE_NETWORK_MEDICALCENTER_STRING, "Tıp Merkezi"));
         }
 
 
         if(selectedQueries.contains("universityHospital")) {
-            logger.info("ÖSS Üniversite hastaneleri anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Üniversite hastaneleri anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(OSS_WHITE_NETWORK_UNIVERSITY_HOSPITAL_STRING, "Üniversite Hastanesi"));
         }
 
         if(selectedQueries.contains("pyhsioCenter")) {
-            logger.info("ÖSS Fizik tedavi merkezleri anlaşmalı kurumlar çekiliyor");
+            System.out.println("ÖSS Fizik tedavi merkezleri anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(OSS_PHYSIOTHERAPHY_STRING, "Fizik Tedavi Merkezi"));
         }
 
         if(selectedQueries.contains("medicine")) {
-            logger.info("ÖSS Eczaneler çekiliyor");
+            System.out.println("ÖSS Eczaneler çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(PHARMACY_REQUEST_STRING, "Eczaneler"));
         }
 
         if(selectedQueries.contains("doctors")) {
-            logger.info("ÖSS Doktorlar çekiliyor");
+            System.out.println("ÖSS Doktorlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(SPECIALIST_REQUEST_STRING,"Doktorlar"));
         }
 
@@ -71,22 +71,22 @@ public class AllianzInsuranceHealthCareProviderService {
         List<AllianzHealthCareProvider> allianzHealthCareProviders = new ArrayList<>();
 
         if(selectedQueries.contains("hospital")) {
-            logger.info("TSS Hastane anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Hastane anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(TSS_HOSPITAL_STRING, "Hastane"));
         }
 
         if(selectedQueries.contains("medicalCenter")) {
-            logger.info("TSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Tıp merkezi anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(TSS_MEDICALCENTER_STRING, "Tıp Merkezi"));
         }
 
         if(selectedQueries.contains("universityHospital")) {
-            logger.info("TSS Üniversite hastaneleri anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Üniversite hastaneleri anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(TSS_UNIVERSITYHOSPPITAL_STRING, "Üniversite Hastanesi"));
         }
 
         if(selectedQueries.contains("pyhsioCenter")) {
-            logger.info("TSS Fizik tedavi merkezleri anlaşmalı kurumlar çekiliyor");
+            System.out.println("TSS Fizik tedavi merkezleri anlaşmalı kurumlar çekiliyor");
             allianzHealthCareProviders.addAll(getProviders(TSS_PHYSIOTHERAPHY_STRING, "Fizik Tedavi Merkezi"));
         }
 

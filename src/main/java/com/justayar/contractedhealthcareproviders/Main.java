@@ -14,12 +14,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Main {
     
-    private static final Logger logger = Logger.getLogger(Main.class.getName());
     private static final String ALLIANZ_COMPANY_IDENTIFIER = "allianz";
     private static final String ANADOLU_COMPANY_IDENTIFIER = "anadolu";
     private static final String DELIMITER_STRING_FOR_LOOP="-----------------------------------------------------";
@@ -102,7 +99,7 @@ public class Main {
                 List<String> selectedQueries = getSelectedQueries(hospital,universityHospital,medicalCenter,pyhsioCenter,medicine,doctors);
                 runProcess(selectedCompanies,selectedPolicies,selectedQueries);
             } catch (IOException ex) {
-                logger.info("Unexpected error happened. Exception message is: "+ex.getMessage());
+                System.out.println("Unexpected error happened. Exception message is: "+ex.getMessage());
             }
         });
 
@@ -200,29 +197,29 @@ public class Main {
         if (selectedCompanies.contains(ANADOLU_COMPANY_IDENTIFIER) && selectedPolicies.contains("oss")) {
 
             AnadoluInsuranceHealthcareProviderService anadoluInsuranceHealthcareProviderService = new AnadoluInsuranceHealthcareProviderService();
-            logger.info("Anadolu Sigorta ÖSS Anlaşmalı Kurumlar çekiliyor.");
+            System.out.println("Anadolu Sigorta ÖSS Anlaşmalı Kurumlar çekiliyor.");
             anadoluInsuranceHealthCareProviders = anadoluInsuranceHealthcareProviderService.getAnadoluInsuranceHealthCareProvidersForOSS(selectedQueries);
-            logger.info("Anadolu Sigorta ÖSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
+            System.out.println("Anadolu Sigorta ÖSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
             excelExporter.createReport("Anadolu ÖSS Listesi", anadoluInsuranceHealthCareProviders, false);
         }
 
         if (selectedCompanies.contains(ALLIANZ_COMPANY_IDENTIFIER) && selectedPolicies.contains("oss")) {
 
-            logger.info(DELIMITER_STRING_FOR_LOOP);
+            System.out.println(DELIMITER_STRING_FOR_LOOP);
             AllianzInsuranceHealthCareProviderService allianzInsuranceHealthCareProviderService = new AllianzInsuranceHealthCareProviderService();
-            logger.info("Allianz Sigorta ÖSS Anlaşmalı Kurumlar çekiliyor.");
+            System.out.println("Allianz Sigorta ÖSS Anlaşmalı Kurumlar çekiliyor.");
             allianzInsuranceHealthCareProviders = allianzInsuranceHealthCareProviderService.getAllianzInsuranceHealthCareProvidersForOSS(selectedQueries);
-            logger.info("Allianz ÖSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
+            System.out.println("Allianz ÖSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
             excelExporter.createReport("Allianz ÖSS Listesi", allianzInsuranceHealthCareProviders, false);
         }
 
         if (selectedCompanies.contains("axa") && selectedPolicies.contains("oss")) {
 
-            logger.info(DELIMITER_STRING_FOR_LOOP);
+            System.out.println(DELIMITER_STRING_FOR_LOOP);
             AxaInsuranceHealthCareProviderService axaInsuranceHealthCareProviderService = new AxaInsuranceHealthCareProviderService();
-            logger.info("Axa Sigorta ÖSS Anlaşmalı Kurumlar çekiliyor.");
+            System.out.println("Axa Sigorta ÖSS Anlaşmalı Kurumlar çekiliyor.");
             axaHealthCareProviders = axaInsuranceHealthCareProviderService.getAxaInsuranceHealthCareProvidersForOSS(selectedQueries);
-            logger.info("Axa ÖSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
+            System.out.println("Axa ÖSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
             excelExporter.createReport("Axa ÖSS Listesi", axaHealthCareProviders, false);
 
         }
@@ -231,32 +228,32 @@ public class Main {
 
 
         if(selectedCompanies.contains(ANADOLU_COMPANY_IDENTIFIER) && selectedPolicies.contains("tss")) {
-            logger.info("Anadolu Sigorta TSS Anlaşmalı Kurumlar çekiliyor");
+            System.out.println("Anadolu Sigorta TSS Anlaşmalı Kurumlar çekiliyor");
             AnadoluInsuranceHealthcareProviderService anadoluInsuranceHealthcareProviderService = new AnadoluInsuranceHealthcareProviderService();
             anadoluInsuranceHealthCareProviders = anadoluInsuranceHealthcareProviderService.getAnadoluInsuranceHealthCareProvidersforTSS(selectedQueries);
-            logger.log(Level.INFO,"Anadolu Sigorta TSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
+            System.out.println("Anadolu Sigorta TSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
             excelExporter.createReport("Anadolu TSS Listesi", anadoluInsuranceHealthCareProviders, false);
 
-            logger.info(DELIMITER_STRING_FOR_LOOP);
+            System.out.println(DELIMITER_STRING_FOR_LOOP);
 
         }
 
         if(selectedCompanies.contains(ALLIANZ_COMPANY_IDENTIFIER) && selectedPolicies.contains("tss")) {
             AllianzInsuranceHealthCareProviderService allianzInsuranceHealthCareProviderService = new AllianzInsuranceHealthCareProviderService();
-            logger.info("Allianz TSS Anlaşmalı Kurumlar çekiliyor.");
+            System.out.println("Allianz TSS Anlaşmalı Kurumlar çekiliyor.");
             allianzInsuranceHealthCareProviders = allianzInsuranceHealthCareProviderService.getAllianzInsuranceHealthCareProvidersForTSS(selectedQueries);
-            logger.info("Allianz TSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
+            System.out.println("Allianz TSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
             excelExporter.createReport("Allianz TSS Listesi", allianzInsuranceHealthCareProviders, false);
 
-            logger.info(DELIMITER_STRING_FOR_LOOP);
+            System.out.println(DELIMITER_STRING_FOR_LOOP);
 
         }
 
         if(selectedCompanies.contains("axa") && selectedPolicies.contains("tss")) {
             AxaInsuranceHealthCareProviderService axaInsuranceHealthCareProviderService = new AxaInsuranceHealthCareProviderService();
-            logger.info("Axa TSS Anlaşmalı Kurumlar çekiliyor.");
+            System.out.println("Axa TSS Anlaşmalı Kurumlar çekiliyor.");
             axaHealthCareProviders = axaInsuranceHealthCareProviderService.getAxaInsuranceHealthCareProvidersForTSS(selectedQueries);
-            logger.info("Axa TSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
+            System.out.println("Axa TSS Anlaşmalı Kurumlar tablosu oluşturuluyor.");
             excelExporter.createReport("Axa TSS Listesi", axaHealthCareProviders, false);
         }
 
@@ -268,19 +265,19 @@ public class Main {
         long seconds = TimeUnit.MILLISECONDS.toSeconds(endTime-startTime);
 
 
-        logger.log(Level.INFO,"İşlem {0} sn sürdü",seconds);
+        System.out.println("İşlem "+seconds+" sn sürdü");
     }
 
     private static void createOSSCompareReport(List<String> selectedCompanies, List<String> selectedPolicies, ExcelExporter excelExporter, List<HealthCareProvider> anadoluInsuranceHealthCareProviders, List<HealthCareProvider> allianzInsuranceHealthCareProviders, List<HealthCareProvider> axaHealthCareProviders, InsuranceProvidersMerger insuranceProvidersMerger) throws IOException {
         List<HealthCareProvider> healthCareProviders;
         if (selectedPolicies.contains("oss") && selectedCompanies.size() > 1){
-            logger.info("");
-            logger.info("ÖSS Karşılaştırma Tablosu oluşturuluyor.");
+            System.out.println();
+            System.out.println("ÖSS Karşılaştırma Tablosu oluşturuluyor.");
             healthCareProviders = insuranceProvidersMerger.mergeAnadoluWithAllianz(anadoluInsuranceHealthCareProviders, allianzInsuranceHealthCareProviders);
             healthCareProviders = insuranceProvidersMerger.mergeAllWithAxa(healthCareProviders, axaHealthCareProviders);
             String ossReport = excelExporter.createReport("ÖSS Karşılaştırma Tablosu", healthCareProviders, true);
-            logger.log(Level.INFO,"ÖSS Karşılaştırma Tablosu Oluşturuldu. Dosya İsmi: {0}" , ossReport);
-            logger.info(DELIMITER_STRING_FOR_LOOP);
+            System.out.println("ÖSS Karşılaştırma Tablosu Oluşturuldu. Dosya İsmi: "+ossReport);
+            System.out.println(DELIMITER_STRING_FOR_LOOP);
         }
     }
 
@@ -289,15 +286,15 @@ public class Main {
         List<HealthCareProvider> healthCareProviders;
         if (selectedPolicies.contains("tss") && selectedCompanies.size() > 1) {
 
-            logger.info("");
-            logger.info("TSS Karşılaştırma Tablosu oluşturuluyor.");
+            System.out.println();
+            System.out.println("TSS Karşılaştırma Tablosu oluşturuluyor.");
 
             insuranceProvidersMerger = new InsuranceProvidersMerger();
             healthCareProviders = insuranceProvidersMerger.mergeAnadoluWithAllianz(anadoluInsuranceHealthCareProviders, allianzInsuranceHealthCareProviders);
             healthCareProviders = insuranceProvidersMerger.mergeAllWithAxa(healthCareProviders, axaHealthCareProviders);
             String tssReport = excelExporter.createReport("TSS Karşılaştırma Tablosu", healthCareProviders, true);
 
-            logger.log(Level.INFO,"TSS Karşılaştırma Tablosu Oluşturuldu. Dosya İsmi: {0} " , tssReport);
+            System.out.println("TSS Karşılaştırma Tablosu Oluşturuldu. Dosya İsmi: "+tssReport);
         }
     }
 }
