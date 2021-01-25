@@ -12,6 +12,7 @@ fazla şirket seçildiği durumda poliçe tipine göre şirketlerin anlaşma yap
 
 İndirmiş olduğunuz koddan TurkishContractedHealthCareProviders/out/artifacts/contractedhealthcareproviders_jar dizinindeki contractedhealthcareproviders.jar dosyasına gelerek çift tıklayın. Masaüstü uygulaması ekranda görülecektir. Form üzerindeki seçenekler seçilerek sorgulama yapılabilir. Sorgulama bitiğinde excel dosyaları otomatik olarak bilgisayarınıza kaydedilecektir. 
 
+Bu uygulama benchmark yapılmak amacıyla belirli fonksiyonaliteler sağlanarak hazırlanmıştır. Ekstra ihtiyaçlarınız ve geri bildirimleriniz için ISSUE açabilirsiniz veya canemreayar@gmail.com üzerinden bana ulaşabilirsiniz.
 
 
 
