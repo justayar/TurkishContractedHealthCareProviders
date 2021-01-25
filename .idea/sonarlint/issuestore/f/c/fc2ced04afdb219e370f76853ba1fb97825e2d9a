@@ -1,0 +1,8 @@
+
+~
+java:S1192Q"aUse already-defined constant 'TEST_TUBE_BABY_NETWORK_CODE' instead of duplicating its value here.(‘£†¸8ëˆŸĞó.
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(¸›îÈùÿÿÿÿ8ìˆŸĞó.
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(ÀŠ•8ìˆŸĞó.
+\
+java:S1068"?Remove this unused "TEST_TUBE_BABY_NETWORK_CODE" private field.(‚¶½ã8ìˆŸĞó.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ù÷€Äÿÿÿÿÿ8ìˆŸĞó.

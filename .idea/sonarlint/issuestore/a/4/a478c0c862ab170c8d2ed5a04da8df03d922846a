@@ -1,0 +1,7 @@
+
+7
+java:S1643"Use a StringBuilder instead.(¾‘øÏ8ˆËíÎó.
+p
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(İ¢êÍıÿÿÿÿ8ˆËíÎó.
+r
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(İ¢êÍıÿÿÿÿ8ˆËíÎó.

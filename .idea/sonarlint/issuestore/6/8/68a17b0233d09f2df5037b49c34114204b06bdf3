@@ -1,0 +1,43 @@
+
+]	java:S125K"<This block of commented-out lines of code should be removed.(±÷¾¦ÿÿÿÿÿ8Ò…öÎó.
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(Ÿ‚Í¼8Ò…öÎó.
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ôœá8Ò…öÎó.
+_
+java:S1068"=Remove this unused "SPECIALIST_REQUEST_STRING" private field.(­—ßıÿÿÿÿ8Ò…öÎó.
+
+java:S3008"bRename this field "PHARMACY_REQUEST_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çâ ê8Ò…öÎó.
+U
+java:S1128"8Remove this unused import 'java.util.function.Function'.(»³Í8ÄÚõÏó.
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(È»ïñ8Ò…öÎó.
+]	java:S125-"<This block of commented-out lines of code should be removed.(±÷¾¦ÿÿÿÿÿ8Ò…öÎó.
+€
+java:S3008"dRename this field "TSS_PHYSIOTHERAPHY_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ëÖ&8Ì™ˆÏó.
+
+java:S3008"lRename this field "OSS_WHITE_NETWORK_HOSPITAL_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÙâÍıÿÿÿÿ8Ò…öÎó.
+V
+java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶8ÄÚõÏó.
+L
+java:S1128
+"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ÄÚõÏó.
+T	java:S106&"9Replace this use of System.out or System.err by a logger.(Š©”Q8Ò…öÎó.
+z
+java:S3008"^Rename this field "TSS_HOSPITAL_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿÷¡8Ò…öÎó.
+†
+java:S3008"dRename this field "SPECIALIST_REQUEST_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­—ßıÿÿÿÿ8Ò…öÎó.
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(ÿÕ·üÿÿÿÿÿ8èµöÎó.
+X
+java:S1068";Remove this unused "PHARMACY_REQUEST_STRING" private field.(çâ ê8Ò…öÎó.
+e
+java:S1128"CRemove this unused import 'java.util.concurrent.ConcurrentHashMap'.(ÓŠÓøúÿÿÿÿ8ÄÚõÏó.
+…
+java:S3008"cRename this field "TSS_MEDICALCENTER_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒæşÿÿÿÿ8Ò…öÎó.
+o
+java:S3776X"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ĞÅñ¼8Ò…öÎó.
+”
+java:S3008"wRename this field "OSS_WHITE_NETWORK_UNIVERSITY_HOSPITAL_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿà¤Ñ8Ò…öÎó.
+U	java:S106="9Replace this use of System.out or System.err by a logger.(Â§ßó8Ò…öÎó.
+“
+java:S3008"qRename this field "OSS_WHITE_NETWORK_MEDICALCENTER_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¨Üÿÿÿÿÿ8Ò…öÎó.
+†
+java:S3008"iRename this field "TSS_UNIVERSITYHOSPPITAL_STRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿä’Ì8Ò…öÎó.
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(¾§éÉ8Ò…öÎó.
