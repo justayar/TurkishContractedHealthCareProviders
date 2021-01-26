@@ -35,7 +35,7 @@ public class AnadoluInsuranceHttpApi {
             try (CloseableHttpClient httpClient = HttpClients.createDefault();
                  CloseableHttpResponse response = httpClient.execute(post)) {
                 ObjectMapper mapper = new ObjectMapper();
-                return mapper.readValue(EntityUtils.toString(response.getEntity()), new TypeReference<>() {
+                return mapper.readValue(EntityUtils.toString(response.getEntity()), new TypeReference<List<HealthCareProvider>>(){
                 });
             }
         } catch (IOException e) {
