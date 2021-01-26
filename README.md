@@ -5,7 +5,7 @@ fazla şirket seçildiği durumda poliçe tipine göre şirketlerin anlaşma yap
 
 ## Uygulamayı çalıştırmak için gerekenler:
 
-- [Java 11](https://www.oracle.com/tr/java/technologies/javase-jdk11-downloads.html) -> Java 11'i bu linkten indirin ve yüklemeyi yapın.
+- [Java 8](https://www.oracle.com/tr/java/technologies/javase-jre8-downloads.html) -> Java 8'i bu linkten indirin ve yüklemeyi yapın.
 - Code kısmından Download Zip yaparak kodu indirin. 
 
 ## Uygulamayı çalıştırırken:
